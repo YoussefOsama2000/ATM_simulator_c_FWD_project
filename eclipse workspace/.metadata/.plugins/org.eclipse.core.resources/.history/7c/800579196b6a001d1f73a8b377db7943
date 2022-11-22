@@ -15,7 +15,6 @@
 #include "../card_module/card.h"
 #include "../server_module/server.h"
 #include <stdio.h>
-ST_cardData_t g_cardData;
 ST_terminalData_t g_termData;
 ST_transaction g_transData;
 void appStart(void){

@@ -4392,3 +4392,141 @@ collect2.exe: error: ld returned 1 exit status
 Info: Internal Builder is used for build
 gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
 Info: Nothing to build for payment_application
+Info: Nothing to build for payment_application
+15:22:55 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
+C:/Program Files/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file payment_application.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:23:02 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
+15:24:23 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function 'appStart':
+..\Application\app.c:48:57: error: expected ';' before 'if'
+     }while(setMaxAmount(&g_termData , max)!=TERMINAL_OK)
+                                                         ^
+                                                         ;
+    if(isCardExpired(&g_cardData, &g_termData)!=TERMINAL_OK)
+    ~~                                                    
+15:24:50 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
+15:26:15 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
+15:27:56 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function 'appStart':
+..\Application\app.c:61:4: error: 'else' without a previous 'if'
+  } else printf("done \n");
+    ^~~~
+15:28:12 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
+15:29:17 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
+15:34:53 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
+15:35:15 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
+15:35:54 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:2:1: error: unknown type name 'ST_cardData_t'
+ ST_cardData_t cardData;
+ ^~~~~~~~~~~~~
+..\main.c:3:1: error: unknown type name 'ST_terminalData_t'
+ ST_terminalData_t termData;
+ ^~~~~~~~~~~~~~~~~
+15:35:58 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
+15:36:05 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
+15:37:42 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function 'appStart':
+..\Application\app.c:42:2: error: too few arguments to function 'fflush'
+  fflush();
+  ^~~~~~
+In file included from ..\Application\app.c:17:
+C:/Program Files/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:588:15: note: declared here
+   int __cdecl fflush(FILE *_File);
+               ^~~~~~
+15:38:24 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
+C:/Program Files/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file payment_application.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:38:32 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
+Info: Nothing to build for payment_application
+15:38:43 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
+C:/Program Files/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file payment_application.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:38:50 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function 'appStart':
+..\Application\app.c:28:20: error: 'g_cardData' undeclared (first use in this function); did you mean 'g_termData'?
+  while(getCardPAN(&g_cardData)!=CARD_OK)
+                    ^~~~~~~~~~
+                    g_termData
+..\Application\app.c:28:20: note: each undeclared identifier is reported only once for each function it appears in
+15:39:05 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function 'appStart':
+..\Application\app.c:29:20: error: 'g_cardData' undeclared (first use in this function); did you mean 'g_termData'?
+  while(getCardPAN(&g_cardData)!=CARD_OK)
+                    ^~~~~~~~~~
+                    g_termData
+..\Application\app.c:29:20: note: each undeclared identifier is reported only once for each function it appears in
+15:39:11 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+..\Application\app.c: In function 'appStart':
+..\Application\app.c:29:20: error: 'g_cardData' undeclared (first use in this function); did you mean 'g_termData'?
+  while(getCardPAN(&g_cardData)!=CARD_OK)
+                    ^~~~~~~~~~
+                    g_termData
+..\Application\app.c:29:20: note: each undeclared identifier is reported only once for each function it appears in
+15:39:34 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
+Info: Nothing to build for payment_application
+15:40:48 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "terminal_module\\terminal.o" "..\\terminal_module\\terminal.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
+C:/Program Files/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file payment_application.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:40:53 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
+Info: Nothing to build for payment_application

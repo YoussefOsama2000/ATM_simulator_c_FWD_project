@@ -1,7 +1,9 @@
 #include "Application/app.h"
-
+ST_cardData_t cardData;
+ST_terminalData_t termData;
 int main(){
 	appStart();
+
 
 	return 0;
 }

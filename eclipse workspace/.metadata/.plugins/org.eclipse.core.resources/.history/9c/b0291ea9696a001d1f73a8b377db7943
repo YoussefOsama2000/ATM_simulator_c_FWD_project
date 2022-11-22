@@ -19,14 +19,11 @@ ST_cardData_t g_cardData;
 ST_terminalData_t g_termData;
 ST_transaction g_transData;
 void appStart(void){
-	setvbuf(stdout, NULL, _IONBF, 0);
-	setvbuf(stderr, NULL, _IONBF, 0);
-	while(1){
-		fflush(stdout);
 	/*
 	 Getting card data ...
 	 */
-
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
 	while(getCardPAN(&g_cardData)!=CARD_OK)
 		printf("wrong PAN\n");
 	printf("Done\n");
@@ -41,7 +38,6 @@ void appStart(void){
 	Getting terminal data ...
 	 */
 	float max=-1;
-	fflush(stdout);
 	while(getTransactionDate(&g_termData)!=TERMINAL_OK)
 		printf("invalid input \n");
 	printf("Done\n");
@@ -63,31 +59,8 @@ void appStart(void){
 	while(isBelowMaxAmount(&g_termData)!=TERMINAL_OK){
 		printf("Exceeded the allowed limit \n");
 	}
-	printf("Done \n");
-	/*
-	 Server started to validate the transaction
-	 */
-	g_transData.cardHolderData=g_cardData;
-		g_transData.terminalData=g_termData;
-		switch (recieveTransactionData(&g_transData)) {
-			case APPROVED:
-				printf("APPROVED \n");
-				break;
-			case DECLINED_INSUFFECIENT_FUND:
-				printf("DECLINED_INSUFFECIENT_FUND \n");
-				break;
-			case DECLINED_STOLEN_CARD:
-				printf("DECLINED_STOLEN_CARD \n");
-				break;
-			case FRAUD_CARD:
-				printf("FRAUD_CARD \n");
-				break;
-			case INTERNAL_SERVER_ERROR:
-				printf("INTERNAL_SERVER_ERROR \n");
-				break;
-		}
-		listSavedTransactions();
+	 printf("done \n");
 
 
-}
+
 }

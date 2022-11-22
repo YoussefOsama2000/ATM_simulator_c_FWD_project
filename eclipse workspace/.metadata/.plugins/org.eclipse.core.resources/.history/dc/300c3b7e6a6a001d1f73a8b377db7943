@@ -19,14 +19,11 @@ ST_cardData_t g_cardData;
 ST_terminalData_t g_termData;
 ST_transaction g_transData;
 void appStart(void){
-	setvbuf(stdout, NULL, _IONBF, 0);
-	setvbuf(stderr, NULL, _IONBF, 0);
-	while(1){
-		fflush(stdout);
 	/*
 	 Getting card data ...
 	 */
-
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
 	while(getCardPAN(&g_cardData)!=CARD_OK)
 		printf("wrong PAN\n");
 	printf("Done\n");
@@ -41,7 +38,6 @@ void appStart(void){
 	Getting terminal data ...
 	 */
 	float max=-1;
-	fflush(stdout);
 	while(getTransactionDate(&g_termData)!=TERMINAL_OK)
 		printf("invalid input \n");
 	printf("Done\n");
@@ -89,5 +85,5 @@ void appStart(void){
 		listSavedTransactions();
 
 
-}
+
 }

@@ -25,7 +25,6 @@ If the transaction date is NULL or is less than 10 characters or wrong format wi
 EN_terminalError_t getTransactionDate(ST_terminalData_t *termData){
 	uint8 counter;
 	printf("Enter transaction Date  DD/MM/YYYY, e.g 25/06/2022 	\n");
-	fflush(stdout);
 	gets((char *)(termData->transactionDate));
 	for(counter=0;counter<10;counter++){
 		if(counter==2 || counter==5)
