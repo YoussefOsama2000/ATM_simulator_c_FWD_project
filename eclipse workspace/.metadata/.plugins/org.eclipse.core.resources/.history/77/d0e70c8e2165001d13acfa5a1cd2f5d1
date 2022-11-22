@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include "card_module/card.h"
+#include "std_types.h"
+#include "terminal_module/terminal.h"
+#include "test.h"
+	ST_cardData_t cardData;
+
+void testTerminalModule(){
+
+}

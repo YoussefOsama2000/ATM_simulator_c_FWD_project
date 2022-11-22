@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;payment_application/terminal_module/terminal.ch&apos; to &apos;terminal.h&apos;" description="Rename resource &apos;terminal.ch&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="terminal_module/terminal.ch" name="terminal.h" stamp="1668439826621" updateReferences="true"/>
+</session>

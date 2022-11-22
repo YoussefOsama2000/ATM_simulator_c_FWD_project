@@ -1,0 +1,25 @@
+#include "test.h"
+void testCardModule(){
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
+	while(getCardPAN(&cardData)!=CARD_OK)
+		printf("wrong PAN\n");
+	printf("Done\n");
+	while(getCardHolderName(&cardData)!=CARD_OK)
+		printf("wrong entry\n");
+	printf("Done\n");
+	while(getCardExpiryDate(&cardData)!=CARD_OK)
+		printf("wrong expiry Date\n");
+	printf("Done\n");
+}
+void testTerminalModule(){
+	float max;
+	printf("Enter maximum amount transaction \n");
+	scanf("%f",&max);
+	setMaxAmount(&termData , max);
+	while(getTransactionAmount(&termData)!=TERMINAL_OK)
+		printf("invalid amount \n");
+
+
+
+}

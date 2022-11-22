@@ -1,0 +1,6 @@
+#ifndef _TEST_
+#define _TEST_
+	ST_cardData_t cardData;
+	void testCardModule();
+	void testTerminalModule();
+#endif
