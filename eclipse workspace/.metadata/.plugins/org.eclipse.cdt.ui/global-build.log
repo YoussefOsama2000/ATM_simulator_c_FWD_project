@@ -4530,3 +4530,36 @@ collect2.exe: error: ld returned 1 exit status
 Info: Internal Builder is used for build
 gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
 Info: Nothing to build for payment_application
+Info: Nothing to build for payment_application
+Info: Nothing to build for payment_application
+Info: Nothing to build for payment_application
+Info: Nothing to build for payment_application
+Info: Nothing to build for payment_application
+Info: Nothing to build for payment_application
+Info: Nothing to build for payment_application
+14:10:40 **** Rebuild of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "terminal_module\\terminal.o" "..\\terminal_module\\terminal.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "card_module\\card.o" "..\\card_module\\card.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "server_module\\server.o" "..\\server_module\\server.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
+14:18:47 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
+14:21:25 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
+14:25:44 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "Application\\app.o" "..\\Application\\app.c" 
+gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
+C:/Program Files/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file payment_application.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:33:31 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 

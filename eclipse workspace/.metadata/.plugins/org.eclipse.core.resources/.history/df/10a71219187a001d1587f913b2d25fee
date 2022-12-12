@@ -56,7 +56,6 @@ void appStart(void){
 	if(isCardExpired(&g_cardData, &g_termData)!=TERMINAL_OK)
 	{
 		printf("the card is Expired \n");
-		appStart();
 	}
 	printf("Done\n");
 	while(getTransactionAmount(&g_termData)!=TERMINAL_OK)

@@ -1,1 +1,6 @@
-Info: Nothing to build for payment_application
+14:33:31 **** Incremental Build of configuration Debug for project payment_application ****
+Info: Internal Builder is used for build
+gcc -o payment_application.exe "Application\\app.o" "card_module\\card.o" main.o "server_module\\server.o" "terminal_module\\terminal.o" test.o 
+
+14:33:32 Build Finished. 0 errors, 0 warnings. (took 160ms)
+
